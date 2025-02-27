@@ -1,0 +1,9 @@
+langchain-community
+langchain-anthropic
+langchain-experimental
+matplotlib
+langgraph
+langgraph-prebuilt
+python-dotenv
+ipykernel
+langchain_openai
