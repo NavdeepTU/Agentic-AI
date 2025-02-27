@@ -1,0 +1,4 @@
+crewai
+crewai-tools # for third party tools
+python-dotenv
+streamlit
