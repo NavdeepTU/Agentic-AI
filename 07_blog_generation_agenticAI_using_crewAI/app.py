@@ -93,3 +93,13 @@ writing_task = Task(
         - Follows proper markdown formatting, use H1 for the title and H3 for the sub-sections""",
     agent = content_writer
 )
+
+crew = Crew(
+    agents = [senior_research_analyst, content_writer],
+    tasks = [research_task, writing_task],
+    verbose = True
+)
+
+result = crew.kickoff(inputs = {"topic": topic})
+
+print(result)
