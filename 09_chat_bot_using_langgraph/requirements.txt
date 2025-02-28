@@ -3,3 +3,5 @@ langsmith
 langchain_openai
 ipykernel
 python-dotenv
+tavily-python
+langchain_community
