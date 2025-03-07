@@ -1,0 +1,13 @@
+langgraph
+langsmith
+langchain_openai
+ipykernel
+python-dotenv
+tavily-python
+langchain_community
+tiktoken 
+langchainhub 
+chromadb 
+langchain  
+langchain-text-splitters 
+beautifulsoup4
