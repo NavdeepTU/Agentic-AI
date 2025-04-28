@@ -1,0 +1,6 @@
+openai
+autogen
+pyautogen
+python-dotenv
+matplotlib
+numpy
