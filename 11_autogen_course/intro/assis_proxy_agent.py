@@ -23,5 +23,5 @@ user_proxy = UserProxyAgent("user_proxy",
 # start the agents
 user_proxy.initiate_chat(
     assistant,
-    message="What is the capital of France?",
+    message="Is number 2 present in list [-3, -1, 3, 6, 7] ?",
 )
