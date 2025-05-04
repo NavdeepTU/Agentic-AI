@@ -51,3 +51,41 @@ summarize_agent = ConversableAgent(
     llm_config=llm_config,
     human_input_mode="NEVER"
 )
+
+# Start a sequence of two-agent chats.
+# Each element in the list is a dictionary that specifies the arguments
+# for the initiate_chat method.
+
+chat_results = initial_agent.initiate_chats(
+    [
+        {
+            "recipient": uppercase_agent,
+            "message": "This is a sample text document.",
+            "max_turns": 2,
+            "summary_method": "last_msg",
+        },
+        {
+            "recipient": word_count_agent,
+            "message": "These are my numbers",
+            "max_turns": 2,
+            "summary_method": "last_msg",
+        },
+        {
+            "recipient": reverse_text_agent,
+            "message": "These are my numbers",
+            "max_turns": 2,
+            "summary_method": "last_msg",
+        },
+        {
+            "recipient": summarize_agent,
+            "message": "These are my numbers",
+            "max_turns": 2,
+            "summary_method": "last_msg",
+        },
+    ]
+)
+
+print("First Chat Summary: ", chat_results[0].summary)
+print("Second Chat Summary: ", chat_results[1].summary)
+print("Third Chat Summary: ", chat_results[2].summary)
+print("Fourth Chat Summary: ", chat_results[3].summary)
