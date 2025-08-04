@@ -3,3 +3,4 @@ langchain
 langchain_openai
 dotenv
 ipykernel
+streamlit
