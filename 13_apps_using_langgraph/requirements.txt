@@ -1,0 +1,7 @@
+langgraph
+langchain
+langchain_openai
+dotenv
+ipykernel
+streamlit
+langgraph-checkpoint-sqlite
